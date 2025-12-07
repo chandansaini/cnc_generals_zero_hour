@@ -1,0 +1,58 @@
+[gd_scene load_steps=2 format=3 uid="uid://main_scene"]
+
+[ext_resource type="Script" path="res://src/main.gd" id="1_main"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_main")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 30, 30)
+current = true
+fov = 60.0
+
+[node name="Terrain" type="Node3D" parent="."]
+
+[node name="Units" type="Node3D" parent="."]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="InfoPanel" type="PanelContainer" parent="UI"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = -150.0
+offset_right = 310.0
+offset_bottom = -10.0
+grow_vertical = 0
+
+[node name="VBox" type="VBoxContainer" parent="UI/InfoPanel"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="UI/InfoPanel/VBox"]
+layout_mode = 2
+text = "OpenGenerals - Proof of Concept"
+
+[node name="HSeparator" type="HSeparator" parent="UI/InfoPanel/VBox"]
+layout_mode = 2
+
+[node name="Instructions" type="Label" parent="UI/InfoPanel/VBox"]
+layout_mode = 2
+text = "Controls:
+WASD - Move camera
+Mouse Wheel - Zoom
+SPACE - Spawn random unit"
+
+[node name="HSeparator2" type="HSeparator" parent="UI/InfoPanel/VBox"]
+layout_mode = 2
+
+[node name="Stats" type="Label" parent="UI/InfoPanel/VBox"]
+layout_mode = 2
+text = "Templates loaded: ..."
