@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <rect width="128" height="128" fill="#1a1a2e"/>
+  <polygon points="64,20 104,50 104,90 64,120 24,90 24,50" fill="#16213e" stroke="#e94560" stroke-width="3"/>
+  <polygon points="64,35 89,52 89,78 64,95 39,78 39,52" fill="#0f3460" stroke="#e94560" stroke-width="2"/>
+  <text x="64" y="72" font-family="Arial Black" font-size="24" fill="#e94560" text-anchor="middle">OG</text>
+</svg>
